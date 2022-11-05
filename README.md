@@ -1,8 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# PROJECT NAME
+# Bookstore CRM
 
-> PROJECT Description
+> The Bookstore is a website similar to the "Awesome Books" with following capabilities:
+
+ - Display a list of books.
+ - Add a book.
+ - Remove a selected book.
+
 
 ## Built With
 
@@ -23,8 +28,8 @@
 In order to run this project locally enter the following commands in a command line tool
 
 ```
-git clone https://github.com/MahdiAghaali/{PROJECTADDRESS}/
-cd {PROJECTFOLDER}
+git clone https://github.com/MahdiAghaali/book-store/
+cd book-store
 npm install
 npm run build
 npm run start
@@ -41,7 +46,7 @@ npm run start
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/MahdiAghaali/{PROJECTLINK}/issues).
+Feel free to check the [issues page](https://github.com/MahdiAghaali/book-store/issues).
 
 ## Show your support
 
