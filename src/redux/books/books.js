@@ -4,7 +4,8 @@ const REMOVE_BOOK = 'book-store/books/REMOVE_BOOK';
 export default function bookReducer(state = [], action) {
   switch (action.type) {
     case ADD_BOOK: return [...state, action.book];
-    case REMOVE_BOOK: return [...state.slice(0, action.index), ...state.slice(action.index + 1)];
+    case REMOVE_BOOK:
+      return state.filter((book) => book.id.toString() !== action.index.toString());
     default: return state;
   }
 }
