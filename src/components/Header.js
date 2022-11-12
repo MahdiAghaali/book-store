@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header>
-    <h1>Bookstore CMS</h1>
     <nav>
+      <h1>Bookstore CMS</h1>
       <ul>
         <li>
           <Link to="/">Books</Link>
@@ -14,6 +14,9 @@ const Header = () => (
         </li>
       </ul>
     </nav>
+    <div id="userAccount">
+      <i className="fa-solid fa-user" />
+    </div>
   </header>
 );
 

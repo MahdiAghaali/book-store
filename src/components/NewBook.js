@@ -8,28 +8,28 @@ const NewBook = () => {
   return (
     <form>
       <h2>Add new Book</h2>
-      <span>title:</span>
-      <input id="bookTitleInput" required />
-      <span>author:</span>
-      <input id="bookAuthorInput" required />
-      <button
-        type="button"
-        onClick={() => {
-          const title = document.getElementById('bookTitleInput').value;
-          const author = document.getElementById('bookAuthorInput').value;
-          const category = 'PlaceHolder';
+      <div className="inputContainer">
+        <input id="bookTitleInput" required placeholder="Book Title" />
+        <input id="bookAuthorInput" required placeholder="Author" />
+        <button
+          type="button"
+          onClick={() => {
+            const title = document.getElementById('bookTitleInput').value;
+            const author = document.getElementById('bookAuthorInput').value;
+            const category = 'Action';
 
-          if (title !== '' && author !== '') {
-            const key = uuidv4();
-            const book = {
-              item_id: key, title, author, category,
-            };
-            dispatch(addBookAsync(book));
-          }
-        }}
-      >
-        Add Book
-      </button>
+            if (title !== '' && author !== '') {
+              const key = uuidv4();
+              const book = {
+                item_id: key, title, author, category,
+              };
+              dispatch(addBookAsync(book));
+            }
+          }}
+        >
+          Add Book
+        </button>
+      </div>
     </form>
   );
 };
