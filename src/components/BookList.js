@@ -11,11 +11,12 @@ const BookList = () => {
   }, []);
 
   return (
-    <ul>
+    <ul id="bookList">
       {bookArray.map((book) => (
         <Book
           key={book.item_id}
           id={book.item_id}
+          category={book.category}
           title={book.title}
           author={book.author}
         />
